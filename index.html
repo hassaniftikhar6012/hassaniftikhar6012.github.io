@@ -143,6 +143,12 @@
   .pub-badge { display: inline-block; background: rgba(255,184,0,0.1); border: 1px solid rgba(255,184,0,0.28); color: var(--gold); font-size: 0.7rem; padding: 0.22rem 0.65rem; border-radius: 100px; margin-bottom: 0.75rem; font-weight: 600; letter-spacing: 0.5px; }
   .pub-title { font-size: 0.98rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; line-height: 1.45; }
   .pub-desc { font-size: 0.83rem; color: var(--muted); line-height: 1.6; }
+  .pub-photos { margin-top: 1.3rem; }
+  .pub-photos-label { font-size: 0.68rem; color: var(--teal); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; margin-bottom: 0.7rem; }
+  .pub-photo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+  .pub-photo-grid img { width: 100%; height: 220px; object-fit: cover; border-radius: 8px; border: 1px solid var(--border); display: block; transition: transform 0.3s; }
+  .pub-photo-grid img:hover { transform: scale(1.02); }
+  @media (max-width: 600px) { .pub-photo-grid { grid-template-columns: 1fr; } .pub-photo-grid img { height: 200px; } }
 
   /* AWARDS */
   #awards { background: var(--bg2); }
@@ -532,6 +538,13 @@
     <span class="pub-badge">✦ Accepted — ICVR 2026</span>
     <h3 class="pub-title">BlindPlayVR — A Sound Based Game for Blind Users with Adaptive Difficulty</h3>
     <p class="pub-desc">Accepted for publication at the International Conference on Virtual Reality (ICVR) 2026. Presents a novel VR gaming framework designed for visually impaired players, leveraging 3D spatial audio and adaptive difficulty systems to ensure an equitable and engaging experience — bridging game engineering with accessibility research.</p>
+    <div class="pub-photos">
+      <div class="pub-photos-label">📸 ICVR 2026 · Cardiff University, July 28–30</div>
+      <div class="pub-photo-grid">
+        <img src="icvr2026-group-photo.jpeg" alt="ICVR 2026 conference group photo at Cardiff University" loading="lazy">
+        <img src="icvr2026-presenting.jpeg" alt="Hassan Iftikhar presenting BlindPlayVR at ICVR 2026" loading="lazy">
+      </div>
+    </div>
   </div>
 </section>
 
